@@ -54,7 +54,7 @@ img {
   justify-content: space-between;
 }
 
-.flex-col {
+.flex-column {
   flex-direction: column;
 }
 
@@ -137,6 +137,35 @@ header nav ul li a::after{
   -ms-transition: width .5s ease;
   -o-transition: width .5s ease;
   bottom: -5px;
+}
+#nav-mobile {
+  position: fixed;
+  right: 0;
+  width: 200px;
+  top: 75px;
+  transition: all 1s ease-in-out;
+  transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+#nav-mobile.show-nav {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+#nav-mobile ul{
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 #toggle{
   font-size: 1.5rem;
