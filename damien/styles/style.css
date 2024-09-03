@@ -159,6 +159,7 @@ header nav ul li a::after {
   padding: 20px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: fixed;
+  z-index: 999;
   right: 0;
   width: 200px;
   height: 100%;
