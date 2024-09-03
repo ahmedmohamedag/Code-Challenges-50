@@ -1,4 +1,165 @@
-*{margin: 0;padding: 0;box-sizing: border-box;scroll-behavior: smooth;}
-a{text-decoration: none;}
-ul{list-style: none;}
-img{object-fit: cover;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-family: "Poppins", sans-serif;
+  --Light:#ffffff;
+  --Dark: #2F2F37;
+  --Black: #1E1E1E;
+  --Grey: hsl(240, 1%, 37%);
+  --Purple: #f110cc;
+}
+body{
+  background-color: var(--Black);
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* Global Classes */
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.j-center {
+  justify-content: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+button{
+  color: var(--Light);
+  background-color: var(--Dark);
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-left: 1rem;
+  transition: background-color .5s ease;
+  -webkit-transition: background-color .5s ease;
+  -moz-transition: background-color .5s ease;
+  -ms-transition: background-color .5s ease;
+  -o-transition: background-color .5s ease;
+  cursor: pointer;
+}
+.col-3{
+  grid-template-columns: repeat(3, 1fr);
+}
+.hidden-lg{
+  display: none;
+}
+.show-lg{
+  display: block;
+}
+button:hover{
+  background-color: var(--Purple);
+}
+
+/******************************/
+/******** Header Styles  ******/
+/******************************/
+header{
+  background-color: var(--Black);
+  border-bottom: 1px solid var(--Grey);
+
+}
+header nav #logo{
+  font-size: 2rem;
+  color: var(--Light);
+  font-family: "Mrs Sheppards", cursive;
+  font-weight: 700;
+
+}
+header nav{
+  padding: .6rem .8rem;
+  border-right: 1px solid var(--Grey);
+  border-left: 1px solid var(--Grey);
+}
+header nav ul{
+  gap: 1.5rem;
+}
+header nav ul li a{
+  position: relative;
+  color: var(--Light);
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+header nav ul li a::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: var(--Purple);
+  transition: width .5s ease;
+  -webkit-transition: width .5s ease;
+  -moz-transition: width .5s ease;
+  -ms-transition: width .5s ease;
+  -o-transition: width .5s ease;
+  bottom: -5px;
+}
+#toggle{
+  font-size: 1.5rem;
+  color: var(--Light);
+  cursor: pointer;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+#toggle:hover{
+  color: var(--Purple);
+}
+.active{
+  color: var(--Purple) !important;
+}
+header nav ul li a:hover{
+  color: var(--Purple);}
+header nav ul li a:hover::after{
+  width: 100%;
+  right: 0;
+}
+/******************************/
+/*** Hero Section Styles    ***/
+/******************************/

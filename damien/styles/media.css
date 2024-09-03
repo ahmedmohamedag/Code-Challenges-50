@@ -1,0 +1,25 @@
+/* Media query*/
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .col-2{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hidden-md{
+    display: none;
+  }
+  .show-md{
+    display: block;
+  }
+}
+
+/* Media query */
+@media only screen and (max-width: 599px) {
+  .col-1{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hidden-sm{
+    display: none;
+  }
+  .show-sm{
+    display: block;
+  }
+}
