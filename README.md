@@ -8,5 +8,5 @@ A collection of 50 exciting web development challenges using HTML, CSS, JavaScri
 
 | ID  | Name   | Demo  | Figma Design |
 |-----|--------|-------|--------------|
-| 1   | Damien | [Live Demo](https://ahmedmohamedag.github.io/Code-Challenges-50/damien/) | [View on Figma](https://www.figma.com/design/DVUlD9ejYQfAVHTV5Olzbi/Photographer-Portfolio-Website-UI-Template---Dark-Theme-%7C-Produce-UI-(Community)?node-id=11-2&t=FC1QoKyFSNOSdsVq-1) |
+| 1   | Damien | [Live Demo](https://damien-lyart.vercel.app/) | [View on Figma](https://www.figma.com/design/DVUlD9ejYQfAVHTV5Olzbi/Photographer-Portfolio-Website-UI-Template---Dark-Theme-%7C-Produce-UI-(Community)?node-id=11-2&t=FC1QoKyFSNOSdsVq-1) |
 
