@@ -9,6 +9,7 @@
   .show-md{
     display: block;
   }
+ 
 }
 
 /* Media query */
@@ -21,5 +22,14 @@
   }
   .show-sm{
     display: block;
+  }
+  #hero .banner{
+    background-image:none;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  #hero .banner h1,#hero .banner a{
+    font-size: 2.3rem;
+    padding-top: 1rem;
   }
 }

@@ -9,14 +9,42 @@
   font-family: "Poppins", sans-serif;
   --Light: #ffffff;
   --Dark: #2F2F37;
-  --Black: #1E1E1E;
+  --Black: #0c0c0c;
   --Grey: hsl(240, 1%, 37%);
+  --Grey_2: #D6D0FB;
   --Purple: #f110cc;
+  --space-lg: 6rem;
+  --space-md: 3rem;
+}
+
+.inner-space-md {
+  padding-block: var(--space-md);
+}
+
+.inner-space-lg {
+  padding-block: var(--space-lg);
+}
+
+.outer-space-lg {
+  margin-block: var(--space-lg);
+}
+
+.outer-space-md {
+  margin-block: var(--space-md);
 }
 
 body {
   background-color: var(--Black);
   line-height: 1.6;
+  color: var(--Light);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  color: var(--Grey);
 }
 
 a {
@@ -224,16 +252,83 @@ header nav ul li a:hover::after {
 /******************************/
 /*** Hero Section Styles    ***/
 /******************************/
+#hero .banner {
+  background-image: url(../images/H_abstract.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.banner-right a {
+  color: var(--Light);
+  font-size: 3rem;
+}
+
+.banner-right a .arrow {
+  color: var(--Light);
+  background-color: var(--Purple);
+  width: 100px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+
+}
+
+.banner-right a .arrow:hover {
+  color: var(--Purple);
+  background-color: var(--Light);
+}
+
+.categories-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--Dark);
+  padding: 10px 0;
+  white-space: nowrap;
+  overflow-x: auto;
+  border-radius: 10px;
+  box-shadow: 0 -2px 10px rgba(35, 33, 33, 0.856);
+}
+.categories-nav div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.categories-nav a {
+  color: var(--Grey_2);
+  margin: 0 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.categories-nav img {
+  margin: 0 5px;
+  width: 40px;
+  height: 40px;
+}
+
 
 /******************************/
 /*** Footer  Styles    ***/
 /******************************/
 
-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
+
 
 #footer-bottom {
   padding: .5rem 0;
